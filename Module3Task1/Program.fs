@@ -27,10 +27,10 @@ let rec getResult() =
         newValue :: getResult()
     else [newValue]
 
-let print (num, gr) = 
-    printfn "%d - %f" num gr
+let print x = 
+    printfn "%A" x
 
-let rec printList (list: list<int * float>) =
+let rec printList (list: (int * float) list) =
     if not list.IsEmpty then
         print list.Head
         printList list.Tail
