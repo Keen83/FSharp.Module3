@@ -18,7 +18,8 @@ let shouldContinue() =
 
 let rec getResult() = 
     // let newValue = readValue |> calcGr
-    let newValue = calcGr <| readValue() 
+    let num = readValue()
+    let newValue = calcGr num
     let needAnotherValue = shouldContinue
 
     // pattern matching would be better
