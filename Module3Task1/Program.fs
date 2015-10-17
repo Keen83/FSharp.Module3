@@ -31,7 +31,6 @@ let print (num, gr) =
     printfn "%d - %f" num gr
 
 let rec printList (list: list<int * float>) =
-    // pattern matching would be better
     if not list.IsEmpty then
         print list.Head
         printList list.Tail
